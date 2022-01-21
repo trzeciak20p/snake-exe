@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    background-color: #aaa;
+    
+}
+header{
+    padding-left: 20px;
+    text-transform: uppercase;
+    display: flex;
+}
+header h1{
+    font-size: 50px;
+    margin: 0px;
+}
+main #score_counter{
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+}
+main #score_counter img[src='lenght.png']{
+    grid-column: 1;
+}
+main #score_counter #score_lenght{
+    grid-column: 2;
+}
+main #score_counter img[src='trophy_best.png']{
+    grid-column: 4;
+}
+main #score_counter #score_best{
+    grid-column: 5;
+}
+
+
+
+
+
+
+
+
+
