@@ -18,6 +18,22 @@ main #score_counter{
     text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    width: 720px;
+}
+main #main{
+    width: 700px;
+    height: 700px;
+    border: 10px #222
+}
+main #main .tile{
+    width: 35px;
+    height: 35px;
+}
+main #main .t1{
+    background-color: #999;
+}
+main #main .t2{
+    background-color: #666;
 }
 main #score_counter img[src='lenght.png']{
     grid-column: 1;
