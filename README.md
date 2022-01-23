@@ -10,4 +10,4 @@ snake ale nie exe i w js
 - score tracking
 - lb (localstorage, DB)
 - grafikowe rzeczy (customizing)
-
+- gdy w score nie wczyta się obraz zmienić tak aby text nie wyjerzdżał

@@ -1,29 +1,63 @@
+:root{
+    --main_col: #ffb734; 
+}
 body{
     margin: 0px;
     padding: 0px;
     font-family: Arial;
-    background-color: #aaa;
-    
+    background-color: #d1d1d1;
 }
 header{
+    width: 100%;
     padding-left: 20px;
+    background-color: #eeeeee;
     text-transform: uppercase;
+    box-shadow: 0px 20px 20px 15px #b3b3b3;
     display: flex;
 }
 header h1{
     font-size: 50px;
     margin: 0px;
+    color: var(--main_col);
 }
+main{
+    margin-top: 35px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+/* SCORE */
 main #score_counter{
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
-    width: 720px;
+    grid-template-columns: 1fr 3fr 6fr 1fr 3fr;
+    width: 710px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #fff;
+    border: 5px solid var(--main_col);
 }
+main #score_counter img[src='img/lenght.png']{
+    grid-column: 1;
+}
+main #score_counter #score_lenght{
+    grid-column: 2;
+}
+main #score_counter img[src='img/trophy.png']{
+    margin-top: 5px;
+    float: right;
+    grid-column: 4;
+}
+main #score_counter #score_best{
+    grid-column: 5;
+}
+/* GRA */
 main #main{
     width: 700px;
     height: 700px;
-    border: 10px #222
+    border: 10px solid var(--main_col);
 }
 main #main .tile{
     width: 35px;
@@ -35,18 +69,7 @@ main #main .t1{
 main #main .t2{
     background-color: #666;
 }
-main #score_counter img[src='lenght.png']{
-    grid-column: 1;
-}
-main #score_counter #score_lenght{
-    grid-column: 2;
-}
-main #score_counter img[src='trophy_best.png']{
-    grid-column: 4;
-}
-main #score_counter #score_best{
-    grid-column: 5;
-}
+
 
 
 
