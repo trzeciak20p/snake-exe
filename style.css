@@ -6,6 +6,7 @@ body{
     padding: 0px;
     font-family: Arial;
     background-color: #d1d1d1;
+    overflow-x: hidden;
 }
 header{
     width: 100%;
