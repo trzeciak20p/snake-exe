@@ -53,20 +53,26 @@ main #score_counter img[src='img/trophy.png']{
 main #score_counter #score_best{
     grid-column: 5;
 }
-/* GRA */
+/* GAME */
 main #main{
+    display: flex;
+    flex-wrap: wrap;
     width: 700px;
     height: 700px;
+    padding: 0px;
+    background-color: var(--main_col);
     border: 10px solid var(--main_col);
+    /* grid-template-columns: repeat(20 1fr);
+    grid-template-rows: repeat(20 1fr); */
 }
 main #main .tile{
     width: 35px;
     height: 35px;
 }
-main #main .t1{
+main #main .tile1{
     background-color: #999;
 }
-main #main .t2{
+main #main .tile2{
     background-color: #666;
 }
 
