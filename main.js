@@ -1,11 +1,16 @@
 const main = document.getElementById("main")
-const score_counter = document.getElementById("score_counter")
-const best_score = document.getElementById("score_best")
+const score_length = document.querySelector("#score_lenght span")
+const best_score = document.querySelector("#score_best span")
 
 const cols = 20
 const rows = 20
-
-
+//importing best score
+let now_best_score
+if (localStorage.getItem('best_score')) {
+    now_best_score = JSON.parse(localStorage.getItem('best_score'));
+}else{
+    now_best_score = 0
+}
 
 function start_game(){
 
@@ -14,7 +19,8 @@ function start_game(){
 
 function main_start(){
     
-    //best_score.innerText = 
+    best_score.innerText = now_best_score
+    
 
     //tiles creating
     for(i = 0; i < rows; i++){

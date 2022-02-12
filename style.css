@@ -32,7 +32,8 @@ main{
 main #score_counter{
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr 3fr 6fr 1fr 3fr;
+    /* grid-template-columns: 1fr 3fr 6fr 1fr 3fr; */
+    grid-template-columns: auto;
     width: 710px;
     height: 40px;
     font-size: 30px;
